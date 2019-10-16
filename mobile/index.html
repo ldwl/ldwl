@@ -114,6 +114,15 @@
     .record_1 {
         color: #fff;
     }
+    
+    .min {
+        width: 29.5% !important;
+    }
+    
+    .max {
+        width: 90% !important;
+        height: auto;
+    }
 </style>
 
 <body>
@@ -179,10 +188,10 @@
             <div id="banner" class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="../img/sec1.jpg" alt="">
+                        <img src="../img/sec2.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../img/sec2.png" alt="">
+                        <img src="../img/sec1.jpg" alt="">
                     </div>
                 </div>
                 <!--如果需要分页器-->
@@ -359,7 +368,7 @@
 
                 <li>
                     <div>
-                        <img src="../img/sec2_icon_qk_02.png" alt="">
+                        <img src="../img/sec2_icon_qk_02.jpg" alt="">
                         <div class="present">
                             <h2>钱包</h2>
                             <p class="mt20" style="font-size: 13px;">
@@ -380,22 +389,22 @@
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <img id="img" src="../img/001.jpg" alt="">
+                    <div id="img" class="min">
+                        <img src="../img/001.jpg" alt="">
                     </div>
-                    <div>
-                        <img id="img" src="../img/002.jpg" alt="">
+                    <div id="img1" class="min">
+                        <img src="../img/002.jpg" alt="">
                     </div>
-                    <div>
-                        <img id="img" src="../img/003.jpg" alt="">
+                    <div id="img2" class="min">
+                        <img src="../img/003.jpg" alt="">
                     </div>
-                    <div>
-                        <img id="img" src="../img/005.jpg" alt="">
+                    <div id="img3" class="min">
+                        <img src="../img/005.jpg" alt="">
                     </div>
-                    <div>
-                        <img id="img" src="../img/006.jpg" alt="">
+                    <div id="img4" class="min">
+                        <img src="../img/006.jpg" alt="">
                     </div>
-                    <div>
+                    <div id="img5" class="min">
                         <img src="../img/007.jpg" alt="">
 
                         <!-- <div class="present">
@@ -553,7 +562,27 @@
         $('#img').click(function() {
             $(this).toggleClass('min');
             $(this).toggleClass('max');
-        })
+        });
+        $('#img1').click(function() {
+            $(this).toggleClass('min');
+            $(this).toggleClass('max');
+        });
+        $('#img2').click(function() {
+            $(this).toggleClass('min');
+            $(this).toggleClass('max');
+        });
+        $('#img3').click(function() {
+            $(this).toggleClass('min');
+            $(this).toggleClass('max');
+        });
+        $('#img4').click(function() {
+            $(this).toggleClass('min');
+            $(this).toggleClass('max');
+        });
+        $('#img5').click(function() {
+            $(this).toggleClass('min');
+            $(this).toggleClass('max');
+        });
     })
     $(document).ready(function() {
         // $(".message img").click(function () {
