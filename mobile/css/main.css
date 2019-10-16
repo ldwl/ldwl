@@ -184,7 +184,7 @@ a {
 
 .mt10 {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .pd20 {
@@ -197,6 +197,7 @@ a {
 
 .text_c {
     text-align: center;
+    font-size: 16px;
 }
 
 .text_l {
