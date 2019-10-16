@@ -179,7 +179,7 @@
             <div id="banner" class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="../img/sec2.png" alt="">
+                        <img src="../img/sec1.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
                         <img src="../img/sec2.png" alt="">
@@ -362,7 +362,7 @@
                         <img src="../img/sec2_icon_qk_02.png" alt="">
                         <div class="present">
                             <h2>钱包</h2>
-                            <p class="mt20">
+                            <p class="mt20" style="font-size: 13px;">
                                 全新的区块链服务软件。及时更新行情，随时关注动态，用户可以轻松掌握区块链赚钱渠道，快速交易，安全稳定。
                             </p>
                             <!-- <a href="javascript:;" class="mt20" id="bt2">查看详情</a> -->
@@ -372,7 +372,7 @@
                         <img src="../img/sec2_icon_qk_03.png" alt="">
                         <div class="present">
                             <h2>交易所</h2>
-                            <p class="mt20">
+                            <p class="mt20" style="font-size: 13px;">
                                 利用区块链技术创造的币钱交易系统，提供交易所快速搭建和业务推荐服务。部署方式灵活多样，支持需求定制化开发，同步交流客户信息。
                             </p>
                             <!-- <a href="javascript:;" class="mt20" id="bt3">查看详情</a> -->
@@ -381,19 +381,19 @@
                 </li>
                 <li>
                     <div>
-                        <img src="../img/001.jpg" alt="">
+                        <img id="img" src="../img/001.jpg" alt="">
                     </div>
                     <div>
-                        <img src="../img/002.jpg" alt="">
+                        <img id="img" src="../img/002.jpg" alt="">
                     </div>
                     <div>
-                        <img src="../img/003.jpg" alt="">
+                        <img id="img" src="../img/003.jpg" alt="">
                     </div>
                     <div>
-                        <img src="../img/005.jpg" alt="">
+                        <img id="img" src="../img/005.jpg" alt="">
                     </div>
                     <div>
-                        <img src="../img/006.jpg" alt="">
+                        <img id="img" src="../img/006.jpg" alt="">
                     </div>
                     <div>
                         <img src="../img/007.jpg" alt="">
@@ -548,30 +548,13 @@
             $('.sec4_con_tab li').eq(i).css('display', 'block').siblings().css('display', 'none');
 
         })
-        //获取留言
-        // $(".message").click(function () {
-        //     var name = $("#name").val()
-        //     var mobile = $("#mobile").val()
-        //     var project_name = $("#project_name").val()
-        //     var demand = $("#demand").val()
-
-    //     if (name == "") {
-    //         layer_msg("请输入姓名！")
-    //         return false;
-    //     }
-    //     if (mobile == "") {
-    //         layer_msg("请输入电话！")
-    //         return false;
-    //     }
-    //     if (project_name == "") {
-    //         layer_msg("请输入项目名称！")
-    //         return false;
-    //     }
-    //     if (demand == "") {
-    //         layer_msg("请输入您的需求！")
-    //         return false;
-    //     }
-    // })
+        //点击图片变大
+    $(function() {
+        $('#img').click(function() {
+            $(this).toggleClass('min');
+            $(this).toggleClass('max');
+        })
+    })
     $(document).ready(function() {
         // $(".message img").click(function () {
         //     $(this).css("backgroung", "none")
